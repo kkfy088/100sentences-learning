@@ -1,9 +1,17 @@
+/**
+ * 听写页面 — 盲听拼写训练模块
+ *
+ * 学生根据中文提示，凭记忆拼写英文句子。
+ * 提交后系统逐词比对标准答案，用红绿高亮展示差异。
+ *
+ * 当前版本：音频功能待接入（保留播放按钮占位）。
+ */
+
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { getAllSentencesSync } from "@/lib/data";
 import { Sentence } from "@/lib/types";
-import { calculateNextReview, qualityFromAccuracy } from "@/lib/srs";
 
 export default function DictationPage() {
   const [sentences] = useState<Sentence[]>(() => getAllSentencesSync());
@@ -16,11 +24,13 @@ export default function DictationPage() {
   const currentSentence = sentences[currentIndex] || null;
   const totalDictation = sentences.length;
 
+  /** 随机选择一句 */
   const handleRandom = () => {
     setCurrentIndex(Math.floor(Math.random() * sentences.length));
     resetState();
   };
 
+  /** 重置当前句子的状态 */
   const resetState = () => {
     setUserInput("");
     setShowEnglish(false);
@@ -28,6 +38,7 @@ export default function DictationPage() {
     setDiffHighlights([]);
   };
 
+  /** 提交听写并进行逐词比对 */
   const handleCheck = () => {
     if (!currentSentence || !userInput.trim()) return;
     setResult("checking");
@@ -46,6 +57,7 @@ export default function DictationPage() {
     setShowEnglish(true);
   };
 
+  /** 进入下一句 */
   const handleNext = () => {
     if (currentIndex < totalDictation - 1) {
       setCurrentIndex((i) => i + 1);
@@ -80,13 +92,13 @@ export default function DictationPage() {
       </div>
 
       <div className="bg-white rounded-xl card-shadow p-6 space-y-6">
-        {/* Chinese context */}
+        {/* 中文语境提示 */}
         <div className="bg-blue-50 text-blue-800 p-4 rounded-lg">
           <p className="text-sm text-blue-500 mb-1">听写提示</p>
           <p className="text-lg font-medium">{currentSentence.chineseContext}</p>
         </div>
 
-        {/* Audio simulator */}
+        {/* 音频播放按钮（占位，待后续接入 TTS） */}
         <div className="flex items-center gap-4">
           <button
             onClick={() => {}}
@@ -101,7 +113,7 @@ export default function DictationPage() {
           <span className="text-xs text-slate-400">请根据中文提示盲听拼写</span>
         </div>
 
-        {/* Input */}
+        {/* 输入框 */}
         <div>
           <textarea
             className="w-full border-2 border-slate-200 rounded-lg p-4 text-base focus:border-primary focus:outline-none resize-none"
@@ -124,7 +136,6 @@ export default function DictationPage() {
           </button>
         ) : (
           <div className="space-y-4 fade-in">
-            {/* Result */}
             {result === "correct" ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
                 <p className="text-green-700 font-bold text-lg">完全正确！</p>
@@ -174,6 +185,11 @@ export default function DictationPage() {
   );
 }
 
+/**
+ * 逐词比对 — 将学生的听写与标准答案逐词比较
+ *
+ * 匹配 → 绿色  |  错误/多余 → 红色删除线  |  缺失 → 红色显示正确词
+ */
 function computeDiff(input: string, target: string): React.ReactNode[] {
   const iWords = input.split(/\s+/);
   const tWords = target.split(/\s+/);
