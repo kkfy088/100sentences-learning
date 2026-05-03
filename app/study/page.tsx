@@ -390,10 +390,11 @@ function StudyContent() {
         {phase === "translating" && !maxAttemptsReached && !currentProgress?.passed && (
           <>
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-2">
+              <label htmlFor="translation-input" className="block text-sm font-medium text-slate-700 mb-2">
                 请输入英文翻译（第 {Math.min(attemptCount, 3)} 次尝试，最多 3 次）
               </label>
               <textarea
+                id="translation-input"
                 className="w-full border-2 border-slate-200 rounded-lg p-4 text-base focus:border-primary focus:outline-none resize-none"
                 rows={3}
                 placeholder="输入你的英文翻译..."
