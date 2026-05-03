@@ -1,9 +1,24 @@
+/**
+ * 数据访问层 — 句子数据和学习进度管理
+ *
+ * 双模式运行：
+ * 1. Supabase 云数据库模式（配置后自动使用）
+ * 2. 本地 JSON 模式（默认，从 sentences.json 加载）
+ *
+ * 提供句子查询、学习记录读写、复习调度等功能。
+ */
+
 import { Sentence } from "./types";
 import { supabase, isSupabaseConfigured } from "./supabase";
 import sentencesData from "./sentences.json";
 
+/** 从本地 JSON 加载的 100 句核心语料 */
 const localSentences: Sentence[] = sentencesData as Sentence[];
 
+/**
+ * 获取所有句子（异步版本）
+ * 如果 Supabase 已配置则从云端加载，否则使用本地数据
+ */
 export async function getAllSentences(): Promise<Sentence[]> {
   if (supabase && isSupabaseConfigured()) {
     const { data, error } = await supabase
@@ -15,18 +30,22 @@ export async function getAllSentences(): Promise<Sentence[]> {
   return localSentences;
 }
 
+/** 获取所有句子（同步版本，直接返回本地数据） */
 export function getAllSentencesSync(): Sentence[] {
   return localSentences;
 }
 
+/** 按模块筛选句子 */
 export function getSentencesByModule(module: Sentence["module"]): Sentence[] {
   return localSentences.filter((s) => s.module === module);
 }
 
+/** 按 ID 查找单条句子 */
 export function getSentenceById(id: string): Sentence | undefined {
   return localSentences.find((s) => s.id === id);
 }
 
+/** 全部 5 个模块名称列表 */
 export const modules: Sentence["module"][] = [
   "核心动词升维",
   "精准形容词与副词替换",
@@ -35,6 +54,7 @@ export const modules: Sentence["module"][] = [
   "复杂句法多样性与长难句搭建",
 ];
 
+/** 获取模块的展示信息（名称、描述、图标） */
 export function getModuleInfo(module: Sentence["module"]) {
   const infos: Record<Sentence["module"], { title: string; description: string; icon: string }> = {
     "核心动词升维": {
@@ -66,6 +86,12 @@ export function getModuleInfo(module: Sentence["module"]) {
   return infos[module];
 }
 
+// ──────────────────────────────────────
+// 以下为 Supabase 云端数据操作方法
+// 仅在配置了 Supabase 环境变量时生效
+// ──────────────────────────────────────
+
+/** 获取某用户对某句子的学习记录 */
 export async function getStudyRecord(userId: string, sentenceId: string) {
   if (!supabase) return null;
   const { data } = await supabase
@@ -77,6 +103,7 @@ export async function getStudyRecord(userId: string, sentenceId: string) {
   return data;
 }
 
+/** 写入或更新学习记录（upsert = 存在则更新，不存在则插入） */
 export async function upsertStudyRecord(
   userId: string,
   sentenceId: string,
@@ -111,13 +138,14 @@ export async function upsertStudyRecord(
   return { data, error };
 }
 
+/** 获取到期需要复习的句子 ID 列表（基于 SRS 调度） */
 export async function getDueReviewSentences(userId: string): Promise<string[]> {
   if (!supabase) return [];
   const { data } = await supabase
     .from("study_records")
     .select("sentence_id")
     .eq("user_id", userId)
-    .lte("next_review_date", new Date().toISOString())
+    .lte("next_review_date", new Date().toISOString())  // next_review_date ≤ 今天
     .order("next_review_date", { ascending: true });
   return data ? data.map((r: { sentence_id: string }) => r.sentence_id) : [];
 }

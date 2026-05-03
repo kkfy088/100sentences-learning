@@ -1,22 +1,33 @@
+/**
+ * 进度看板 — 学习数据可视化
+ *
+ * 两个 Tab：
+ * - 总体概览：整体通过率、各模块细分统计、总尝试次数
+ * - 复习菜单：所有已通过句子的集中管理面板
+ */
+
 "use client";
 
 import { useState, useEffect } from "react";
 import { modules, getModuleInfo, getSentenceById } from "@/lib/data";
 import { SentenceProgress } from "@/lib/types";
 
+/** localStorage 存储键名（与学习页面一致） */
 const STORAGE_KEY = "100sentences_v2_progress";
 
+/** 单个模块的统计数据 */
 interface ModuleStats {
-  total: number;
-  passed: number;
-  bestAvg: number;
-  totalAttempts: number;
+  total: number;          // 总句数
+  passed: number;         // 已通过数
+  bestAvg: number;        // 平均最佳正确率
+  totalAttempts: number;  // 总尝试次数
 }
 
 export default function DashboardPage() {
   const [progress, setProgress] = useState<Record<string, SentenceProgress>>({});
   const [activeTab, setActiveTab] = useState<"overview" | "review">("overview");
 
+  // 从 localStorage 加载进度数据
   useEffect(() => {
     if (typeof window !== "undefined") {
       try {
@@ -25,12 +36,12 @@ export default function DashboardPage() {
     }
   }, []);
 
+  // ─── 计算各模块统计 ───
   const moduleStats: Record<string, ModuleStats> = {};
   for (const mod of modules) {
     const prefix = getModulePrefix(mod);
-    const entries = Object.entries(progress).filter(([k]) =>
-      k.startsWith(prefix)
-    );
+    // 筛选属于该模块的句子记录
+    const entries = Object.entries(progress).filter(([k]) => k.startsWith(prefix));
     const values = entries.map(([, v]) => v);
     moduleStats[mod] = {
       total: 20,
@@ -43,9 +54,12 @@ export default function DashboardPage() {
     };
   }
 
+  // ─── 全局聚合数据 ───
   const totalPassed = Object.values(moduleStats).reduce((s, m) => s + m.passed, 0);
   const totalSentences = 100;
   const totalAttempts = Object.values(moduleStats).reduce((s, m) => s + m.totalAttempts, 0);
+
+  // 复习菜单中的句子（已通过且未手动移除）
   const reviewSentences = Object.entries(progress).filter(
     ([, v]) => v.passed && v.inReview
   );
@@ -57,7 +71,7 @@ export default function DashboardPage() {
         <p className="text-sm text-slate-500 mt-1">追踪你的学习成果</p>
       </div>
 
-      {/* Tab switcher */}
+      {/* Tab 切换 */}
       <div className="flex gap-2">
         {(["overview", "review"] as const).map((tab) => (
           <button
@@ -70,6 +84,7 @@ export default function DashboardPage() {
             }`}
           >
             {tab === "overview" ? "📊 总体概览" : "📋 复习菜单"}
+            {/* 复习菜单徽章数字 */}
             {tab === "review" && reviewSentences.length > 0 && (
               <span className="ml-1.5 bg-highlight text-white text-xs px-1.5 py-0.5 rounded-full">
                 {reviewSentences.length}
@@ -79,19 +94,16 @@ export default function DashboardPage() {
         ))}
       </div>
 
+      {/* ═══════════ 总览 Tab ═══════════ */}
       {activeTab === "overview" ? (
         <>
-          {/* Overall stats */}
+          {/* 全局统计卡片 — 已通过数 / 通过率 / 总尝试次数 */}
           <div className="bg-white rounded-xl card-shadow p-6">
             <h2 className="font-semibold text-lg mb-4">总览</h2>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
-                <div className="text-3xl font-bold text-primary">
-                  {totalPassed}
-                </div>
-                <div className="text-xs text-slate-500 mt-1">
-                  已通过 / {totalSentences}
-                </div>
+                <div className="text-3xl font-bold text-primary">{totalPassed}</div>
+                <div className="text-xs text-slate-500 mt-1">已通过 / {totalSentences}</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary">
@@ -100,12 +112,11 @@ export default function DashboardPage() {
                 <div className="text-xs text-slate-500 mt-1">通过率</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">
-                  {totalAttempts}
-                </div>
+                <div className="text-3xl font-bold text-primary">{totalAttempts}</div>
                 <div className="text-xs text-slate-500 mt-1">总尝试次数</div>
               </div>
             </div>
+            {/* 总进度条 */}
             <div className="mt-4 h-3 bg-slate-200 rounded-full overflow-hidden">
               <div
                 className="h-full bg-primary rounded-full progress-bar"
@@ -114,7 +125,7 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          {/* Module breakdown */}
+          {/* 各模块细分明细 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {modules.map((mod) => {
               const info = getModuleInfo(mod);
@@ -130,6 +141,7 @@ export default function DashboardPage() {
                       </p>
                     </div>
                   </div>
+                  {/* 模块进度条 */}
                   <div className="h-2 bg-slate-200 rounded-full overflow-hidden">
                     <div
                       className="h-full bg-success rounded-full progress-bar"
@@ -146,7 +158,7 @@ export default function DashboardPage() {
           </div>
         </>
       ) : (
-        /* Review tab */
+        /* ═══════════ 复习菜单 Tab ═══════════ */
         <div className="bg-white rounded-xl card-shadow p-6">
           <h2 className="font-semibold text-lg mb-4">
             📋 复习菜单 ({reviewSentences.length})
@@ -167,12 +179,8 @@ export default function DashboardPage() {
                   >
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
-                        <span className="text-xs font-mono text-slate-400">
-                          {sid}
-                        </span>
-                        <p className="text-sm font-medium truncate">
-                          {s.chineseContext}
-                        </p>
+                        <span className="text-xs font-mono text-slate-400">{sid}</span>
+                        <p className="text-sm font-medium truncate">{s.chineseContext}</p>
                       </div>
                       <p className="text-xs text-slate-400 truncate mt-0.5">
                         {s.targetSentence}
@@ -181,6 +189,7 @@ export default function DashboardPage() {
                         正确率 {rp.bestAccuracy}% · 尝试 {rp.totalAttempts} 次
                       </p>
                     </div>
+                    {/* 优秀/待巩固 标记 */}
                     <span
                       className={`ml-3 text-xs px-2 py-1 rounded-full shrink-0 ${
                         rp.bestAccuracy >= 90
@@ -201,6 +210,7 @@ export default function DashboardPage() {
   );
 }
 
+/** 根据模块名称获取对应的 ID 前缀（如 m1, m2, ...） */
 function getModulePrefix(mod: string): string {
   const map: Record<string, string> = {
     "核心动词升维": "m1",

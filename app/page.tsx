@@ -1,9 +1,16 @@
+/**
+ * 首页 — 入口页面
+ *
+ * 展示项目简介、五大模块入口和核心学习方法论。
+ */
+
 import Link from "next/link";
 import { modules, getModuleInfo } from "@/lib/data";
 
 export default function HomePage() {
   return (
     <div className="space-y-10">
+      {/* 标题区域 */}
       <section className="text-center space-y-4">
         <h1 className="text-3xl font-bold tracking-tight text-primary">
           高分100句
@@ -27,6 +34,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 五大学习模块卡片 */}
       <section>
         <h2 className="text-xl font-semibold mb-6">五大学习模块</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -53,6 +61,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 学习方法论 — 三步闭环 */}
       <section className="bg-white rounded-xl p-6 card-shadow">
         <h2 className="text-xl font-semibold mb-4">学习方法论</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -69,18 +78,18 @@ export default function HomePage() {
             <div className="w-10 h-10 bg-green-100 text-green-700 rounded-full flex items-center justify-center font-bold">
               2
             </div>
-            <h3 className="font-semibold">AI深度点评</h3>
+            <h3 className="font-semibold">智能比对</h3>
             <p className="text-sm text-slate-500">
-              LLM对比标准答案，纠正语法错误，讲解高级词伙和知识要点
+              系统逐词比对标准答案，计算正确率并标注具体错误
             </p>
           </div>
           <div className="space-y-2">
             <div className="w-10 h-10 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center font-bold">
               3
             </div>
-            <h3 className="font-semibold">清空重写</h3>
+            <h3 className="font-semibold">巩固回顾</h3>
             <p className="text-sm text-slate-500">
-              清空输入框，根据所学知识重新默写标准答案，形成肌肉记忆
+              多次尝试强化记忆，通过句子自动加入复习菜单
             </p>
           </div>
         </div>
