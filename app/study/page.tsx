@@ -399,6 +399,12 @@ function StudyContent() {
                 placeholder="输入你的英文翻译..."
                 value={userInput}
                 onChange={(e) => setUserInput(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" && !e.shiftKey && userInput.trim()) {
+                    e.preventDefault();
+                    handleSubmit();
+                  }
+                }}
                 autoFocus
               />
             </div>
