@@ -280,6 +280,7 @@ function StudyContent() {
         <div className="flex items-center gap-3">
           <button
             onClick={handleToggleReview}
+            aria-label={showReview ? "收起复习菜单" : "展开复习菜单"}
             className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
               showReview
                 ? "bg-primary text-white"
@@ -311,6 +312,7 @@ function StudyContent() {
             <button
               key={mod}
               onClick={() => handleSelectModule(mod)}
+              aria-label={`切换到 ${info.title} 模块`}
               className={`whitespace-nowrap px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
                 isActive
                   ? "bg-primary text-white"
@@ -352,6 +354,7 @@ function StudyContent() {
                     </div>
                     <button
                       onClick={() => handleRemoveReview(rp.sentenceId)}
+                      aria-label={`从复习菜单移除 ${s.chineseContext}`}
                       className="ml-3 text-xs text-slate-400 hover:text-red-500 transition-colors shrink-0"
                     >
                       移除
@@ -412,6 +415,7 @@ function StudyContent() {
             <button
               onClick={handleSubmit}
               disabled={!userInput.trim()}
+              aria-label="提交翻译"
               className="w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-primary-light disabled:bg-slate-300 transition-colors"
             >
               提交诊断
@@ -509,6 +513,7 @@ function StudyContent() {
 
             <button
               onClick={handleNextSentence}
+              aria-label={currentIndex < totalInModule - 1 ? "进入下一句" : "返回开头"}
               className="w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-primary-light transition-colors"
             >
               {currentIndex < totalInModule - 1 ? "下一句" : "返回开头"}
@@ -532,6 +537,7 @@ function StudyContent() {
             </div>
             <button
               onClick={handleNextSentence}
+              aria-label={currentIndex < totalInModule - 1 ? "进入下一句" : "返回开头"}
               className="w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-primary-light transition-colors"
             >
               {currentIndex < totalInModule - 1 ? "下一句" : "返回开头"}
