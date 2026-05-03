@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   description: "通过学习和掌握100个高分英语句子来提升英语写作水平",
 };
 
+/** 视口配置 — 确保移动端正确缩放（≥375px 视口宽度） */
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh-CN">
