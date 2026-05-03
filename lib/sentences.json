@@ -1,0 +1,802 @@
+[
+  {
+    "id": "m1-01",
+    "module": "核心动词升维",
+    "chineseContext": "这项研究展示了睡眠不足的危险。",
+    "targetSentence": "The study illustrates the dangers of sleep deprivation.",
+    "tier1Warning": "shows",
+    "deepAnalysis": "替换 shows。Illustrate 意为“阐明、图解”，常用于学术说明文中引出数据或证据的客观展示 35。"
+  },
+  {
+    "id": "m1-02",
+    "module": "核心动词升维",
+    "chineseContext": "这幅画描绘了一个悲伤的场景。",
+    "targetSentence": "The painting depicts a sorrowful scene.",
+    "tier1Warning": "shows/tells",
+    "deepAnalysis": "替换 shows/tells。Depict 是文学与艺术分析（GCSE English Literature）中的高频词，意为“生动地描绘”，极大地提升了描述的文学色彩 37。"
+  },
+  {
+    "id": "m1-03",
+    "module": "核心动词升维",
+    "chineseContext": "作者表达了一种绝望感。",
+    "targetSentence": "The author conveys a sense of despair.",
+    "tier1Warning": "says/shows",
+    "deepAnalysis": "替换 says/shows。Convey（传达）是 CCSS 明确要求的 Tier 2 词汇，专用于讨论作者如何通过文字向读者传递情感或主旨 36。"
+  },
+  {
+    "id": "m1-04",
+    "module": "核心动词升维",
+    "chineseContext": "政府实施了新的环保法律。",
+    "targetSentence": "The government implemented new environmental laws.",
+    "tier1Warning": "started/made",
+    "deepAnalysis": "替换 started/made。Implement（贯彻、执行）是社会科学和政策讨论中的标志性词汇，赋予句子正式的行政语气体 34。"
+  },
+  {
+    "id": "m1-05",
+    "module": "核心动词升维",
+    "chineseContext": "我们必须利用可再生能源。",
+    "targetSentence": "We must utilize renewable energy sources.",
+    "tier1Warning": "use",
+    "deepAnalysis": "替换 use。Utilize 强调为了特定目的而对资源进行有效、科学的利用，是科技说明文的必备词汇 36。"
+  },
+  {
+    "id": "m1-06",
+    "module": "核心动词升维",
+    "chineseContext": "她获得了丰富的经验。",
+    "targetSentence": "She acquired extensive experience.",
+    "tier1Warning": "got",
+    "deepAnalysis": "替换 got。Acquire 强调通过长期的努力、学习或积累而获得无形资产（如技能、知识、经验） 13。"
+  },
+  {
+    "id": "m1-07",
+    "module": "核心动词升维",
+    "chineseContext": "科技彻底改变了我们的生活。",
+    "targetSentence": "Technology has profoundly altered our lives.",
+    "tier1Warning": "changed",
+    "deepAnalysis": "替换 changed。Alter 指在保留本质的前提下进行显著的修改或变更，常与副词 profoundly 搭配使用 36。"
+  },
+  {
+    "id": "m1-08",
+    "module": "核心动词升维",
+    "chineseContext": "这个项目产生了可观的利润。",
+    "targetSentence": "The project generated substantial profits.",
+    "tier1Warning": "made",
+    "deepAnalysis": "替换 made。Generate 意为“产生、发轫”，多用于描述能量、收入、想法等抽象事物的创造过程 36。"
+  },
+  {
+    "id": "m1-09",
+    "module": "核心动词升维",
+    "chineseContext": "专家们断言这种治疗是安全的。",
+    "targetSentence": "Experts assert that the treatment is safe.",
+    "tier1Warning": "say",
+    "deepAnalysis": "替换 say。Assert（断言、坚定地主张）体现了极强的学术自信，是议论文中引出权威观点的绝佳词汇 34。"
+  },
+  {
+    "id": "m1-10",
+    "module": "核心动词升维",
+    "chineseContext": "这项政策减轻了贫困问题。",
+    "targetSentence": "This policy alleviated the problem of poverty.",
+    "tier1Warning": "helped/made better",
+    "deepAnalysis": "替换 helped/made better。Alleviate（缓解、减轻）专用于描述减轻痛苦、困难或负面影响，是讨论社会问题时的高阶动词 36。"
+  },
+  {
+    "id": "m1-11",
+    "module": "核心动词升维",
+    "chineseContext": "老师促进了课堂上的讨论。",
+    "targetSentence": "The teacher facilitated discussions in the classroom.",
+    "tier1Warning": "helped",
+    "deepAnalysis": "替换 helped。Facilitate 意为“使便利、促进”，强调提供条件使某事更容易发生，是教育和管理领域的进阶词汇 36。"
+  },
+  {
+    "id": "m1-12",
+    "module": "核心动词升维",
+    "chineseContext": "学生必须评估信息的可靠性。",
+    "targetSentence": "Students must evaluate the reliability of information.",
+    "tier1Warning": "check/think about",
+    "deepAnalysis": "替换 check/think about。Evaluate（评估、评价）直接对应 CCSS 和 GCSE 考纲中最高层级的认知技能（AO4） 37。"
+  },
+  {
+    "id": "m1-13",
+    "module": "核心动词升维",
+    "chineseContext": "他清晰地表达了他的要求。",
+    "targetSentence": "He clearly articulated his demands.",
+    "tier1Warning": "said",
+    "deepAnalysis": "替换 said。Articulate 强调不仅说出来，而且表达得极其清晰、有条理且富有说服力 37。"
+  },
+  {
+    "id": "m1-14",
+    "module": "核心动词升维",
+    "chineseContext": "环保主义者提倡减少塑料使用。",
+    "targetSentence": "Environmentalists advocate reducing plastic use.",
+    "tier1Warning": "support/want",
+    "deepAnalysis": "替换 support/want。Advocate（提倡、拥护）是表达立场和政治诉求的标准学术词汇 36。"
+  },
+  {
+    "id": "m1-15",
+    "module": "核心动词升维",
+    "chineseContext": "这些动物察觉到了危险。",
+    "targetSentence": "The animals perceived the danger.",
+    "tier1Warning": "saw/felt",
+    "deepAnalysis": "替换 saw/felt。Perceive 指通过感官或心智敏锐地察觉到不易发现的事物，常用于心理描写和科学观察 37。"
+  },
+  {
+    "id": "m1-16",
+    "module": "核心动词升维",
+    "chineseContext": "我们必须解决这个问题。",
+    "targetSentence": "We must address this issue.",
+    "tier1Warning": "deal with",
+    "deepAnalysis": "替换 deal with。Address 在正式语境中意为“着手解决、设法应对”，比 deal with 更具执行力和专业感 36。"
+  },
+  {
+    "id": "m1-17",
+    "module": "核心动词升维",
+    "chineseContext": "这个角色体现了勇气的精神。",
+    "targetSentence": "The character embodies the spirit of courage.",
+    "tier1Warning": "shows",
+    "deepAnalysis": "替换 shows。Embody（具体表现、化身）是文学分析中极高阶的动词，用于指出某人/物是某种抽象概念的完美代表 35。"
+  },
+  {
+    "id": "m1-18",
+    "module": "核心动词升维",
+    "chineseContext": "这项决定将危及整个计划。",
+    "targetSentence": "This decision will jeopardize the entire plan.",
+    "tier1Warning": "ruin/hurt",
+    "deepAnalysis": "替换 ruin/hurt。Jeopardize 意为“使处于危险中”，发音极具节奏感，能有效增强论述文中的危机感 36。"
+  },
+  {
+    "id": "m1-19",
+    "module": "核心动词升维",
+    "chineseContext": "新规章将阻碍经济增长。",
+    "targetSentence": "The new regulations will hinder economic growth.",
+    "tier1Warning": "stop/slow down",
+    "deepAnalysis": "替换 stop/slow down。Hinder（阻碍、妨碍）精确描述了某事物成为发展道路上绊脚石的状态 36。"
+  },
+  {
+    "id": "m1-20",
+    "module": "核心动词升维",
+    "chineseContext": "这两种观点互相矛盾。",
+    "targetSentence": "These two viewpoints contradict each other.",
+    "tier1Warning": "go against",
+    "deepAnalysis": "替换 go against。Contradict 是进行对比论证（Counter-arguments）时的核心动词，展示了批判性思维 36。"
+  },
+  {
+    "id": "m2-01",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这个问题是极其巨大的。",
+    "targetSentence": "The problem is immense.",
+    "tier1Warning": "very big",
+    "deepAnalysis": "替换 very big。Immense 强调在规模、程度或空间上大到难以估量的地步，修辞张力极强。"
+  },
+  {
+    "id": "m2-02",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "吸烟对健康有有害的影响。",
+    "targetSentence": "Smoking has a detrimental effect on health.",
+    "tier1Warning": "bad",
+    "deepAnalysis": "替换 bad。Detrimental（有害的、不利的）是探讨社会问题或健康科学时必定会用到的 Tier 2 学术形容词。"
+  },
+  {
+    "id": "m2-03",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这个区别是微不足道的。",
+    "targetSentence": "The difference is negligible.",
+    "tier1Warning": "very small",
+    "deepAnalysis": "替换 very small。Negligible 意为“可以忽略不计的”，常用于数据分析和实验结果比较中，体现科学的严谨性。"
+  },
+  {
+    "id": "m2-04",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这是一个有利的情况。",
+    "targetSentence": "This is an advantageous situation.",
+    "tier1Warning": "good",
+    "deepAnalysis": "替换 good。Advantageous 强调某事物能带来战略上的优势或实在的好处，常用于议论文分析 36。"
+  },
+  {
+    "id": "m2-05",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "指示必须是明确的。",
+    "targetSentence": "The instructions must be explicit.",
+    "tier1Warning": "clear",
+    "deepAnalysis": "替换 clear。Explicit 意为“详述的、直言不讳的”，是 CCSS 考纲中频繁出现的要求学生“寻找明确文本证据（Explicit evidence）”的核心词 8。"
+  },
+  {
+    "id": "m2-06",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "他的影响是深远的。",
+    "targetSentence": "His influence was profound.",
+    "tier1Warning": "deep/big",
+    "deepAnalysis": "替换 deep/big。Profound 用于形容影响、理解或经验时，表示“极其深刻的、意义重大的”。"
+  },
+  {
+    "id": "m2-07",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这种疾病在农村很普遍。",
+    "targetSentence": "The disease is prevalent in rural areas.",
+    "tier1Warning": "common",
+    "deepAnalysis": "替换 common。Prevalent 专指某种现象、风俗或疾病在特定时期或地区内“广泛流行的、盛行的”。"
+  },
+  {
+    "id": "m2-08",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这些技术已经过时了。",
+    "targetSentence": "These technologies are now obsolete.",
+    "tier1Warning": "old",
+    "deepAnalysis": "替换 old。Obsolete 意为“废弃的、淘汰的”，在科技与社会发展的论述中比 old 精确得多。"
+  },
+  {
+    "id": "m2-09",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "他给出了一个令人信服的理由。",
+    "targetSentence": "He provided a compelling reason.",
+    "tier1Warning": "good/strong",
+    "deepAnalysis": "替换 good/strong。Compelling 意为“极其吸引人的、令人信服的”，是高阶议论文的标配形容词 36。"
+  },
+  {
+    "id": "m2-10",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这个理论是看似合理的。",
+    "targetSentence": "This theory is plausible.",
+    "tier1Warning": "believable",
+    "deepAnalysis": "替换 believable。Plausible 带有一定的学术保留，意为“貌似有理的”，常用于评价反方观点（Counterclaim）。"
+  },
+  {
+    "id": "m2-11",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "技术进步是不可避免的。",
+    "targetSentence": "Technological advancement is inevitable.",
+    "tier1Warning": "sure to happen",
+    "deepAnalysis": "替换 sure to happen。Inevitable 传达出一种历史的必然性，极大增强了论证的宿命感和力量感。"
+  },
+  {
+    "id": "m2-12",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "他主要地关注教育。",
+    "targetSentence": "He predominantly focuses on education.",
+    "tier1Warning": "mostly",
+    "deepAnalysis": "替换 mostly。Predominantly 意为“占主导地位地、绝大多数地”，提升了副词使用的学术级别 36。"
+  },
+  {
+    "id": "m2-13",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "结果非常惊人。",
+    "targetSentence": "The results were remarkably surprising.",
+    "tier1Warning": "very",
+    "deepAnalysis": "替换 very。Remarkably（显著地、引人注目地）比空洞的 very 更能唤起读者的注意力。"
+  },
+  {
+    "id": "m2-14",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这个设计是复杂的。",
+    "targetSentence": "The design is intricate.",
+    "tier1Warning": "complex/hard",
+    "deepAnalysis": "替换 complex/hard。Intricate 强调内部结构错综复杂、盘根错节，常用于描述艺术品、系统或情节 36。"
+  },
+  {
+    "id": "m2-15",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这是一个自发的决定。",
+    "targetSentence": "It was a spontaneous decision.",
+    "tier1Warning": "sudden",
+    "deepAnalysis": "替换 sudden。Spontaneous（自发的、无预谋的）生动刻画了动作发生时的自然和随意状态。"
+  },
+  {
+    "id": "m2-16",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这种行为是荒谬的。",
+    "targetSentence": "Such behavior is absurd.",
+    "tier1Warning": "silly/stupid",
+    "deepAnalysis": "替换 silly/stupid。Absurd 带有强烈的批判色彩，指违背常理、荒谬可笑，适用于激烈的辩论反驳中。"
+  },
+  {
+    "id": "m2-17",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这项任务非常繁琐。",
+    "targetSentence": "The task was extremely tedious.",
+    "tier1Warning": "boring",
+    "deepAnalysis": "替换 boring。Tedious（冗长乏味的）精确描述了因为单调重复而令人厌烦的状态。"
+  },
+  {
+    "id": "m2-18",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "这是一个模棱两可的陈述。",
+    "targetSentence": "It is an ambiguous statement.",
+    "tier1Warning": "unclear",
+    "deepAnalysis": "替换 unclear。Ambiguous 指含义不清、可以有多种解释的，是高级文本分析的必备词 36。"
+  },
+  {
+    "id": "m2-19",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "后果将是灾难性的。",
+    "targetSentence": "The consequences will be catastrophic.",
+    "tier1Warning": "really bad",
+    "deepAnalysis": "替换 really bad。Catastrophic（灾难性的）能够营造出极强的危机感，用于强调某一负面事件的终极影响。"
+  },
+  {
+    "id": "m2-20",
+    "module": "精准形容词与副词替换",
+    "chineseContext": "她始终保持着一致的表现。",
+    "targetSentence": "She maintained a consistent performance.",
+    "tier1Warning": "steady/same",
+    "deepAnalysis": "替换 steady/same。Consistent 是 CCSS 词汇表中的常客，意为“始终如一的、连贯的”，是极好的学术评价词 36。"
+  },
+  {
+    "id": "m3-01",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "相反，新数据表明……",
+    "targetSentence": "Conversely, the new data suggests...",
+    "tier1Warning": "But/On the other hand",
+    "deepAnalysis": "替换 But/On the other hand。Conversely 是极其正式的对比连词，用于引出截然相反的结论或情况，瞬间提升文章的学术性 44。"
+  },
+  {
+    "id": "m3-02",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "尽管如此，我们仍必须前行。",
+    "targetSentence": "Nevertheless, we must proceed.",
+    "tier1Warning": "But/Anyway",
+    "deepAnalysis": "替换 But/Anyway。Nevertheless（与 nonetheless 类似）表示让步转折，意为“虽然有前文所述的情况，但依然……”，是辩论中极具力量的过渡词 44。"
+  },
+  {
+    "id": "m3-03",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "即使存在风险，她也同意了。",
+    "targetSentence": "She agreed, albeit with some risks.",
+    "tier1Warning": "Even though",
+    "deepAnalysis": "替换 Even though。Albeit 是一个文言连词，相当于 even though it be，通常直接接介词短语或形容词，构成极其紧凑的高级让步结构 44。"
+  },
+  {
+    "id": "m3-04",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "随之而来的是，系统崩溃了。",
+    "targetSentence": "Subsequently, the system crashed.",
+    "tier1Warning": "Then/After that",
+    "deepAnalysis": "替换 Then/After that。Subsequently 明确表示时间顺序上的“紧接着、随后”，是叙事和说明过程中表示流程步骤的完美副词 44。"
+  },
+  {
+    "id": "m3-05",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "因此，这引发了担忧。",
+    "targetSentence": "Accordingly, this raises concerns.",
+    "tier1Warning": "So",
+    "deepAnalysis": "替换 So。Accordingly 意为“相应地、因此”，强调动作是基于前述事实顺理成章作出的反应，逻辑极其严密 44。"
+  },
+  {
+    "id": "m3-06",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "诚然，该计划有缺陷。",
+    "targetSentence": "Granted, the plan has flaws.",
+    "tier1Warning": "It is true that",
+    "deepAnalysis": "替换 It is true that。Granted 是议论文中承认对方观点（Concession）的经典起手式，大度且客观 44。"
+  },
+  {
+    "id": "m3-07",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "值得注意的是，发病率下降了。",
+    "targetSentence": "Notably, the infection rate dropped.",
+    "tier1Warning": "Importantly",
+    "deepAnalysis": "替换 Importantly。Notably 用于在众多信息中特别突出一项值得关注的事实，起到“画重点”的修辞作用 44。"
+  },
+  {
+    "id": "m3-08",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "这尤其是因为预算削减。",
+    "targetSentence": "This is particularly because of budget cuts.",
+    "tier1Warning": "mainly",
+    "deepAnalysis": "替换 mainly。Particularly 意为“特别地、尤其是”，用于从泛泛而谈中收束焦点，直击核心原因。"
+  },
+  {
+    "id": "m3-09",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "归根结底，决定权在你。",
+    "targetSentence": "Ultimately, the decision is yours.",
+    "tier1Warning": "In the end",
+    "deepAnalysis": "替换 In the end。Ultimately（最终、根本上）常置于段首或句首，用于引出穿越表象后的终极结论 47。"
+  },
+  {
+    "id": "m3-10",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "它改变了一切，也就是我们的思维方式。",
+    "targetSentence": "It changed everything, namely our way of thinking.",
+    "tier1Warning": "which means",
+    "deepAnalysis": "替换 which means。Namely 意为“即、也就是”，专门用于对前文的宽泛概念进行精确的具象化解释 44。"
+  },
+  {
+    "id": "m3-11",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "与此同时，全球气温在上升。",
+    "targetSentence": "Simultaneously, global temperatures are rising.",
+    "tier1Warning": "At the same time",
+    "deepAnalysis": "替换 At the same time。Simultaneously 展现了极强的词汇水平，用于描述平行发生、双线并行的复杂事件 44。"
+  },
+  {
+    "id": "m3-12",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "由于他的努力，我们赢了。",
+    "targetSentence": "As a consequence of his effort, we won.",
+    "tier1Warning": "Because of",
+    "deepAnalysis": "替换 Because of。复合介词短语 As a consequence of 具有强烈的因果学术感，比简单的 because 更加严谨正式 44。"
+  },
+  {
+    "id": "m3-13",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "总而言之，结果是积极的。",
+    "targetSentence": "On the whole, the results are positive.",
+    "tier1Warning": "All in all",
+    "deepAnalysis": "替换 All in all。On the whole 用于结论段落，表示在综合考量了各方因素后得出的总体评价 44。"
+  },
+  {
+    "id": "m3-14",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "这种观点，不管怎样，是有缺陷的。",
+    "targetSentence": "This view, regardless of its popularity, is flawed.",
+    "tier1Warning": "anyway",
+    "deepAnalysis": "替换 anyway。Regardless of 引导让步介词短语，作为插入语切断主谓结构，增加了句式的跌宕感 44。"
+  },
+  {
+    "id": "m3-15",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "为了说明这一点，请看图1。",
+    "targetSentence": "To illustrate this point, look at Figure 1.",
+    "tier1Warning": "To show this",
+    "deepAnalysis": "替换 To show this。To illustrate 是标准的不定式目的状语，学术展示和文本引用时的必备短语 34。"
+  },
+  {
+    "id": "m3-16",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "与此截然相反的是……",
+    "targetSentence": "In stark contrast to this...",
+    "tier1Warning": "Unlike",
+    "deepAnalysis": "替换 Unlike。通过添加 stark（鲜明的），极大地强化了对比的修辞张力，使对立面泾渭分明 44。"
+  },
+  {
+    "id": "m3-17",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "尽管有延误，我们还是到达了。",
+    "targetSentence": "Notwithstanding the delays, we arrived.",
+    "tier1Warning": "Despite",
+    "deepAnalysis": "替换 Despite。Notwithstanding 是极高级的正式让步介词，不仅能放在名词前，甚至能放在名词后（the delays notwithstanding），极显功底 44。"
+  },
+  {
+    "id": "m3-18",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "换言之，我们需要更多时间。",
+    "targetSentence": "In other words, we need more time.",
+    "tier1Warning": "",
+    "deepAnalysis": "此短语用于在提出一个复杂概念后，进行通俗化的复述，是确保读者理解（Clarity）的有效过渡策略 44。"
+  },
+  {
+    "id": "m3-19",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "有鉴于此，政策必须修改。",
+    "targetSentence": "In light of these points, the policy must be revised.",
+    "tier1Warning": "So",
+    "deepAnalysis": "替换 So。In light of... 意为“考虑到、鉴于”，在段落过渡或结论处使用，能够自然地承上启下。"
+  },
+  {
+    "id": "m3-20",
+    "module": "高级逻辑连接词与过渡网络",
+    "chineseContext": "更进一步说，这关乎道德。",
+    "targetSentence": "Furthermore, this is a matter of ethics.",
+    "tier1Warning": "And",
+    "deepAnalysis": "替换 And。Furthermore 用于在已有的论点上叠加一个更深层次、更具分量的新论点 44。"
+  },
+  {
+    "id": "m4-01",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "文本明确指出……",
+    "targetSentence": "The text explicitly states that...",
+    "tier1Warning": "",
+    "deepAnalysis": "用于引入直接证据（Evidence）。Explicitly states 满足了 CCSS \"refer explicitly to the text\" 的硬性要求。"
+  },
+  {
+    "id": "m4-02",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "一个令人信服的理由是……",
+    "targetSentence": "One compelling reason is that...",
+    "tier1Warning": "",
+    "deepAnalysis": "用于引出支撑主张的论点（Reason）。Compelling 的使用避免了 \"A good reason is\" 的平淡无奇。"
+  },
+  {
+    "id": "m4-03",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "数据表明这种趋势在上升。",
+    "targetSentence": "The data suggests that the trend is rising.",
+    "tier1Warning": "",
+    "deepAnalysis": "学术推理（Reasoning）的起手式。用 suggests 替代 shows，体现了基于数据进行合理推断的学术客观性。"
+  },
+  {
+    "id": "m4-04",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "这突显了两者之间的联系。",
+    "targetSentence": "This highlights the interconnectedness of the two.",
+    "tier1Warning": "",
+    "deepAnalysis": "用于深入分析证据（Analysis）。Highlights 和高级名词 interconnectedness 展现了写作者透视事物本质的洞察力。"
+  },
+  {
+    "id": "m4-05",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "尽管这一观点很流行，但它缺乏事实依据。",
+    "targetSentence": "While this position is popular, it is not supported by the facts.",
+    "tier1Warning": "",
+    "deepAnalysis": "标准的反驳（Rebuttal）框架。前半句承认对方观点的影响力，后半句用客观事实给予击破。"
+  },
+  {
+    "id": "m4-06",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "引起X的最主要原因是Y，因为……",
+    "targetSentence": "The most significant cause of X was Y because...",
+    "tier1Warning": "",
+    "deepAnalysis": "因果论证框架。用 significant 限定原因，体现了逻辑分析的优先级排序能力。"
+  },
+  {
+    "id": "m4-07",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "为了理解这一点，我们必须考察历史。",
+    "targetSentence": "In order to understand this, we must examine the history.",
+    "tier1Warning": "",
+    "deepAnalysis": "用于段落开头设定背景（Context）。In order to 明确了后续动作的目的，逻辑指引极为清晰 34。"
+  },
+  {
+    "id": "m4-08",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "作者的意图是引起共鸣。",
+    "targetSentence": "The author's intent is to evoke sympathy.",
+    "tier1Warning": "",
+    "deepAnalysis": "用于文学分析。Intent（意图）和 evoke（唤起）精准指出了作家遣词造句背后的修辞目的（AO2） 49。"
+  },
+  {
+    "id": "m4-09",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "这一证据证明了……",
+    "targetSentence": "This evidence demonstrates that...",
+    "tier1Warning": "",
+    "deepAnalysis": "连接 Evidence 和 Reasoning 的黄金纽带。Demonstrate 是科学与说明性写作中最稳妥的动词之一 51。"
+  },
+  {
+    "id": "m4-10",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "读者可以推断出局势很紧张。",
+    "targetSentence": "The reader can infer that the situation was tense.",
+    "tier1Warning": "",
+    "deepAnalysis": "用于分析隐含意义。Infer（推断）直接对应 CCSS \"make logical inferences from text\" 的核心技能点。"
+  },
+  {
+    "id": "m4-11",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "一个相关的例子是工业革命。",
+    "targetSentence": "A relevant example is the Industrial Revolution.",
+    "tier1Warning": "",
+    "deepAnalysis": "引入具体证据。Relevant 确保了所举例子与中心论点的强关联性，回应了考纲对 \"relevant and sufficient evidence\" 的要求 52。"
+  },
+  {
+    "id": "m4-12",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "这直接反驳了前面的主张。",
+    "targetSentence": "This directly contradicts the previous claim.",
+    "tier1Warning": "",
+    "deepAnalysis": "有力的反驳句型。Directly contradicts 斩钉截铁地指出了逻辑上的互斥，增强了辩论的火药味。"
+  },
+  {
+    "id": "m4-13",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "人们普遍认为……",
+    "targetSentence": "It is widely acknowledged that...",
+    "tier1Warning": "",
+    "deepAnalysis": "用于陈述背景或普遍认知。Widely acknowledged 是极为地道的无生命主语被动句式，避免了 \"Many people think\" 的口语感。"
+  },
+  {
+    "id": "m4-14",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "基于这些事实，我的立场是……",
+    "targetSentence": "Based on these facts, my stance is that...",
+    "tier1Warning": "",
+    "deepAnalysis": "引出个人主张。Stance（立场）比 opinion 更具政治、学术辩论的严肃性。"
+  },
+  {
+    "id": "m4-15",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "通过对比可以看出……",
+    "targetSentence": "By comparison, it becomes apparent that...",
+    "tier1Warning": "",
+    "deepAnalysis": "对比分析框架。It becomes apparent that... 是高级形式主语结构，使结论的得出显得水到渠成。"
+  },
+  {
+    "id": "m4-16",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "这个论点存在的缺陷在于……",
+    "targetSentence": "The flaw in this argument lies in...",
+    "tier1Warning": "",
+    "deepAnalysis": "批判性思维框架。Flaw 精确指出了对方逻辑链条中的漏洞，是拿高分的终极杀器。"
+  },
+  {
+    "id": "m4-17",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "考虑到所有的变量，……",
+    "targetSentence": "Taking everything into account,...",
+    "tier1Warning": "",
+    "deepAnalysis": "结论段的优美总结句式。作为前置分词状语，它展示了写作者全面的视野和归纳能力。"
+  },
+  {
+    "id": "m4-18",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "这篇文章的核心思想是……",
+    "targetSentence": "The central premise of this article is...",
+    "tier1Warning": "",
+    "deepAnalysis": "归纳主旨。Premise（前提、核心思想）是 Tier 2 高阶词汇，瞬间拉高了文本分析的专业段位。"
+  },
+  {
+    "id": "m4-19",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "我们不仅应该……更重要的是……",
+    "targetSentence": "Not only should we..., but more importantly,...",
+    "tier1Warning": "",
+    "deepAnalysis": "递进强调句型。倒装结构加上 more importantly 的拔高，让文章的论述层次感呼之欲出。"
+  },
+  {
+    "id": "m4-20",
+    "module": "学术论证与思辨框架",
+    "chineseContext": "最终，该文本引起了人们的共鸣。",
+    "targetSentence": "Ultimately, the text resonates with the audience.",
+    "tier1Warning": "",
+    "deepAnalysis": "分析文本影响（Effect on reader）。Resonate with 意为“引起共鸣”，精准击中 GCSE AO2 考核读者情感体验的得分点 49。"
+  },
+  {
+    "id": "m5-01",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "安娜每天跑步，希望能改善健康。",
+    "targetSentence": "Running every day, Anna hoped to improve her health.",
+    "tier1Warning": "",
+    "deepAnalysis": "现在分词短语作前置伴随状语（Fronted participial phrase）。打破了主语开头的单调，赋予句子动感 28。"
+  },
+  {
+    "id": "m5-02",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "因伤心而疲惫，他放弃了。",
+    "targetSentence": "Exhausted by grief, he gave up.",
+    "tier1Warning": "",
+    "deepAnalysis": "过去分词短语作前置原因状语。这种被动结构的倒装，将人物的状态极其强烈地推到读者眼前 28。"
+  },
+  {
+    "id": "m5-03",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "城市，曾经是一个绿洲，现在变成了沙漠。",
+    "targetSentence": "The city, once a lush oasis, has turned into a desert.",
+    "tier1Warning": "",
+    "deepAnalysis": "插入式同位语短语（Appositive phrase）。在两个逗号间进行信息降维，无需使用冗长的 was/which 结构。"
+  },
+  {
+    "id": "m5-04",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "这就是我们面临的困境。",
+    "targetSentence": "This is the dilemma with which we are faced.",
+    "tier1Warning": "",
+    "deepAnalysis": "介词提前的定语从句。将 with 提前避免了介词结尾的非正式感（介词悬垂），是极其正式的高级语法。"
+  },
+  {
+    "id": "m5-05",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "它的影响力如此之大，以至于……",
+    "targetSentence": "So significant is its impact that...",
+    "tier1Warning": "",
+    "deepAnalysis": "So...that... 结构的完全倒装句（Inversion）。将表语 so significant 提至句首，产生强烈的修辞强调效果。"
+  },
+  {
+    "id": "m5-06",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "正是教育改变了我们。",
+    "targetSentence": "It is education that transforms us.",
+    "tier1Warning": "",
+    "deepAnalysis": "强调句型（Cleft sentence）。通过 It is... that... 的框定，强制考官或读者的注意力集中在被强调的核心名词上。"
+  },
+  {
+    "id": "m5-07",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "只要我们团结，就能赢。",
+    "targetSentence": "Provided that we stand united, we can win.",
+    "tier1Warning": "",
+    "deepAnalysis": "高级条件状语从句。用 Provided that 替换俗套的 If，大幅提升了句式的学术严谨性和契约感。"
+  },
+  {
+    "id": "m5-08",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "他不仅聪明，而且勤奋。",
+    "targetSentence": "Not only is he intelligent, but he is also diligent.",
+    "tier1Warning": "",
+    "deepAnalysis": "Not only 置于句首引起的部分倒装。这是英美中学语法大纲中的必考点，能让句子的韵律感倍增。"
+  },
+  {
+    "id": "m5-09",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "如果不去理解过去，我们注定要重复它。",
+    "targetSentence": "Without understanding the past, we are doomed to repeat it.",
+    "tier1Warning": "",
+    "deepAnalysis": "介词 + 动名词短语作状语。用极为精炼的介词结构传达了深刻的假设条件与因果逻辑。"
+  },
+  {
+    "id": "m5-10",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "他的态度，至少可以说，是令人困惑的。",
+    "targetSentence": "His attitude is, to say the least, perplexing.",
+    "tier1Warning": "",
+    "deepAnalysis": "插入语（Parenthesis）。通过两个逗号隔开，为句子增添了反讽或委婉的主观评价口吻。"
+  },
+  {
+    "id": "m5-11",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "这个理论，如果应用得当，将解决问题。",
+    "targetSentence": "This theory, if applied correctly, will solve the problem.",
+    "tier1Warning": "",
+    "deepAnalysis": "省略形式的状语从句（Elliptical clause）。去掉了 if it is，保留核心意义，使行文更加紧凑、成熟。"
+  },
+  {
+    "id": "m5-12",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "要掌握这门技术，需要数年的练习。",
+    "targetSentence": "To master this technique requires years of practice.",
+    "tier1Warning": "",
+    "deepAnalysis": "不定式短语作主语（Infinitive phrase as subject）。比 It requires years... to master 更加直接，凸显了动作本身的重量。"
+  },
+  {
+    "id": "m5-13",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "无论结果如何，我们都必须尝试。",
+    "targetSentence": "Whatever the outcome may be, we must try.",
+    "tier1Warning": "",
+    "deepAnalysis": "让步状语从句。Whatever 引导的从句展现了立场的坚定不移，是议论文结尾极具感染力的句型。"
+  },
+  {
+    "id": "m5-14",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "这本书写于19世纪，现在仍有意义。",
+    "targetSentence": "Written in the 19th century, the book remains relevant today.",
+    "tier1Warning": "",
+    "deepAnalysis": "过去分词前置。这是 GCES 考官最青睐的结构之一（AO6），完美实现了时间背景背景与核心观点的叠加 28。"
+  },
+  {
+    "id": "m5-15",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "他奇迹般地幸存下来了，这让我很惊讶。",
+    "targetSentence": "That he miraculously survived surprised me.",
+    "tier1Warning": "",
+    "deepAnalysis": "主语从句（Noun clause as subject）。将一整个事件作为主语，展现了写作者掌控宏大语法块的超强能力。"
+  },
+  {
+    "id": "m5-16",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "她盯着窗外，她的眼睛里充满了泪水。",
+    "targetSentence": "She stared out the window, her eyes filled with tears.",
+    "tier1Warning": "",
+    "deepAnalysis": "独立主格结构（Absolute phrase）。有自己独立的逻辑主语(her eyes)，补充说明主句的伴随状态，是高级描写的巅峰技巧 53。"
+  },
+  {
+    "id": "m5-17",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "那个男孩，他的狗丢了，正在哭泣。",
+    "targetSentence": "The boy, whose dog was lost, was crying.",
+    "tier1Warning": "",
+    "deepAnalysis": "Whose 引导的非限制性定语从句。通过所属关系交代理由，比简单的 he was crying because... 更加优雅、含蓄 28。"
+  },
+  {
+    "id": "m5-18",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "毫无疑问，这是一项伟大的成就。",
+    "targetSentence": "There is no denying that this is a great achievement.",
+    "tier1Warning": "",
+    "deepAnalysis": "固定搭配的同位语从句。There is no denying that 掷地有声，常用于在论述最后确立不可动摇的论点。"
+  },
+  {
+    "id": "m5-19",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "这是我们所依赖的基础。",
+    "targetSentence": "This is the foundation upon which we rely.",
+    "tier1Warning": "",
+    "deepAnalysis": "介词前置的高级定语从句。Upon which 的结构极具古典和学术文献的肃穆感，是 Tier 2 词汇的高级搭档。"
+  },
+  {
+    "id": "m5-20",
+    "module": "复杂句法多样性与长难句搭建",
+    "chineseContext": "只有通过教育，我们才能进步。",
+    "targetSentence": "Only through education can we progress.",
+    "tier1Warning": "",
+    "deepAnalysis": "Only + 状语前置引起的倒装。这既满足了修辞上强烈的唯一性限定，又展示了对复杂倒装句法的熟练驾驭。 结论：重构亚洲学生的英文写作进阶路线图 综合认知语言学理论、英美前沿的 SLA 实证研究，以及深度剖析的 CCSS 和 GCSE 考纲标准，本报告对亚洲学生的英文写作提升策略得出以下结论： •\t破除“意合”习惯，建立基于语料库的“形合”直觉（Establish Hypotactic Intuition）： 学生必须彻底摒弃拿着中文的模糊概念直接在大脑中进行逐字翻译的做法。必须通过大量输入并高频模仿本文所列的“关联词表”（Transitions）、“复合介词短语”和“非谓语动词结构”，让思维习惯于英语那种依靠显性语法纽带（如连词、关系代词）来搭建多维立体句子的工程学模式。 •\t坚守从句法刻意练习走向微观语篇构建的路径（Sentence Mastery to Framed Paragraphs）： 研究反复证明，脱离具体语境的死记硬背语法规则和孤立的单词表往往适得其反 19。最有效的进阶方法是利用类似 CER 的句型框架（Sentence frames），进行“带壳填空”式的强制演练。这种高度支架化（Highly scaffolded）的做法，不仅大幅降低了组织篇章的认知阻力，还能释放出宝贵的工作记忆（Working memory），使学生能将全部脑力集中在“内容的逻辑推理”和“词汇的精确打击”上 6。 •\t执行词汇的全面升维：与 Tier 2 学术词汇库无缝接轨： 将大脑中第一反应跳出的 Tier 1 基础词汇（如 important, bad, happy, think, make, can）当作一个警示红灯。每当想要在试卷或论文上写下这些词时，必须强制自己暂停，去检索其对应的 Tier 2 甚至 Tier 3 变体（如 of vital significance, adverse, ecstatic, assert, facilitate, proficient in）。长此以往，个人的内部词汇网络将被重塑，文本的专业度和学术权威感（Academic Tone）必将产生质的飞跃。 总而言之，从精雕细琢的高级句型和地道深邃的学术词汇（Sentence-based approach）强势切入，绝对是亚洲 ESL 学生跨越母语鸿沟、打破英语写作瓶颈的最科学、最高效、且经过无数实证检验的黄金路径。 熟练掌控上述源自英美初中顶级考纲的核心语法机制与语料库，学生将不再是语言规则的被动适应者，而将成为能够从容操纵各类复杂体裁、运用语言产生深刻影响力的成熟写作者。 引用的著作 •\t(PDF) The Impact of Chinese ESL Learner Interlanguage on Writing: A Syntactical Analysis, 访问时间为 五月 3, 2026， https://www.researchgate.net/publication/234113545_The_Impact_of_Chinese_ESL_Learner_Interlanguage_on_Writing_A_Syntactical_Analysis •\tThe Efficacy of Basic Sentence Pattern Approach for EFL Learners in Writing - Journal of English Teaching through Movies and Media, 访问时间为 五月 3, 2026， https://www.ejournal-stem.org/journal/view.php?viewtype=pubreader&number=553 •\tAnalysis of Text-Based Grammar Teaching Method on the Language Proficiency and Grammar Accuracy of ESL Learners in China | International Journal of Sciences: Basic and Applied Research (IJSBAR), 访问时间为 五月 3, 2026， https://www.gssrr.org/JournalOfBasicAndApplied/article/view/16270 •\tImplementing a Three-Stage Approach to Teach Writing Skills Using the Corpus of - OSF, 访问时间为 五月 3, 2026， https://osf.io/download/mq2ys •\tWriting Skills and Writing Approaches in ESL Classroom: A Systematic Review - HRMARS, 访问时间为 五月 3, 2026， https://hrmars.com/papers_submitted/13259/writing-skills-and-writing-approaches-in-esl-classroom-a-systematic-review.pdf •\tFramed Paragraphs | Reading Rockets, 访问时间为 五月 3, 2026， https://www.readingrockets.org/classroom/classroom-strategies/framed-paragraphs •\tBuilding Strong Writers: Activities & Writing Strategies for ELL Students - Continental Press, 访问时间为 五月 3, 2026， https://www.continentalpress.com/blog/writing-strategies-ell-students/ •\tCommon Core State StandardS - CCSSO, 访问时间为 五月 3, 2026， https://learning.ccsso.org/wp-content/uploads/2022/11/ELA_Standards1.pdf •\tCore Knowledge Sequence GRADE 6 Common Core State Standards covered at CK Grade Level Common Core State Standards covered above, 访问时间为 五月 3, 2026， https://www.coreknowledge.org/wp-content/uploads/2017/03/CK_CCSS_ELA_alignment_G6-G8.pdf •\tCommon Core Essential Elements/Common Core State Standards side by side for English Language Arts - OSPI, 访问时间为 五月 3, 2026， https://ospi.k12.wa.us/sites/default/files/2022-12/ccee-ccss-ela.pdf •\tTier 2 Word Lists and Vocabulary Lessons – English Language Learning, 访问时间为 五月 3, 2026， https://blogs.sd41.bc.ca/ell/tier-2-word-lists-and-vocabulary-lessons/ •\tA guide to Tier 1, 2 & 3 vocabulary - Bedrock Learning, 访问时间为 五月 3, 2026， https://bedrocklearning.org/literacy-blogs/a-guide-to-tier-1-2-and-3-vocabulary/ •\tGCSE English 8700 | Specification | Scheme Of Assessment - AQA, 访问时间为 五月 3, 2026， https://www.aqa.org.uk/subjects/english/gcse/english-8700/specification/scheme-of-assessment •\tGCSE (9-1) English Language Teacher Guide - Writing Skills - Cambridge OCR, 访问时间为 五月 3, 2026， https://www.ocr.org.uk/Images/577351-writing-skills.pdf •\t[Withdrawn] GCSE subject-level guidance for English language (2022) - GOV.UK, 访问时间为 五月 3, 2026， https://www.gov.uk/government/publications/gcse-subject-level-conditions-for-2022/gcse-subject-level-guidance-for-english-language-2022 •\tSentences (Relative Clauses) 01 - KS3 - Education Quizzes, 访问时间为 五月 3, 2026， https://www.educationquizzes.com/ks3/english/sentences-relative-clauses-01/ •\tEnglish programmes of study: key stage 3 - GOV.UK, 访问时间为 五月 3, 2026， https://assets.publishing.service.gov.uk/media/5a7b8761ed915d4147620f6b/SECONDARY_national_curriculum_-_English2.pdf •\t10 Language & Structure Techniques You'll Find In ANY GCSE English Language Exam (AO2 Marks) - YouTube, 访问时间为 五月 3, 2026， https://www.youtube.com/watch?v=6zXBiAuPQ_Y •\tBad Ideas About Writing - WVU Libraries - West Virginia University, 访问时间为 五月 3, 2026， https://textbooks.lib.wvu.edu/badideas/badideasaboutwriting-book.pdf •\tSentence Frames and Sentence Starters | Colorín Colorado, 访问时间为 五月 3, 2026， https://www.colorincolorado.org/teaching-ells/ell-classroom-strategy-library/sentence-frames •\tSentence Writing: First Step or Side-by-Side Skill? - Coach from the Couch, 访问时间为 五月 3, 2026， https://coachfromthecouch.com/2025/08/09/sentence-writing/ •\tFormation, Inheritance and Extension of the Architecture Spirituality - POLITesi, 访问时间为 五月 3, 2026， https://www.politesi.polimi.it/retrieve/a81cb05c-70ba-616b-e053-1605fe0a889a/Thesis%20Paper-Formation%2C%20inheritance%20and%20extension%20of%20the%20Architecture%20Spirituality.pdf •\t外刊写作地道表达.pdf •\tParamount.when do you use it? I learnt this word but cannot put it in sentences. Thanks - italki, 访问时间为 五月 3, 2026， https://www.italki.com/en/post/question-369438 •\t“Able” vs. “Capable”: What's the Difference? - Engram, 访问时间为 五月 3, 2026， https://www.engram.us/vs/49/able-vs-capable •\tThe Teaching of Writing: Methods, Resources, Plans, and Analysis - ScholarWorks@BGSU, 访问时间为 五月 3, 2026， https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1046&context=ms_english •\tPROFICIENT Synonyms: 155 Similar and Opposite Words | Merriam-Webster Thesaurus, 访问时间为 五月 3, 2026， https://www.merriam-webster.com/thesaurus/proficient •\tRelative Clauses Appositives and Participles - Mt. SAC, 访问时间为 五月 3, 2026， https://www.mtsac.edu/writingcenter/handouts/relative_clauses_appositives_and_participles.pdf •\tExplicit Grammar: Teaching Relative Clauses - mrbunkeredu - WordPress.com, 访问时间为 五月 3, 2026， https://mrbunkeredu.wordpress.com/2015/04/17/explicit-grammar-lessons-relative-clauses/ •\tSentence Starters | Examples & Tips - QuillBot, 访问时间为 五月 3, 2026， https://quillbot.com/blog/academic-writing/sentence-starters/ •\t\"Because/because of/owing to/on account of/due to\"? [closed] - English Stack Exchange, 访问时间为 五月 3, 2026， https://english.stackexchange.com/questions/316483/because-because-of-owing-to-on-account-of-due-to •\tCONTINGENT ON/UPON SOMETHING definition | Cambridge English Dictionary, 访问时间为 五月 3, 2026， https://dictionary.cambridge.org/us/dictionary/english/contingent-on-upon •\tCourse correction pays off for Vaquer, students - Effingham Herald, 访问时间为 五月 3, 2026， https://www.effinghamherald.net/local/course-correction-pays-vaquer-students/ •\tWriting Reference Packet, 访问时间为 五月 3, 2026， https://albion.canyonsdistrict.org/wp-content/uploads/sites/343/2020/03/8th-Grade-ELA-Packet.pdf •\tGCSE English Key Words, 访问时间为 五月 3, 2026， https://www.farlingaye.suffolk.sch.uk/TeachingLearning/Literacy/GCSE_Key_Words_Booklet_English.pdf •\tCore Tier 2 Vocabulary, 访问时间为 五月 3, 2026， https://www.vocabulary.com/lists/zbl5naha/academic-vocabulary-core-tier-2-words •\tGrades 7/8 Tier 2 Academic Vocabulary Words, 访问时间为 五月 3, 2026， https://www.southerncayuga.org/tfiles/folder648/Tier%202%20Vocab%20gr%2078.pdf •\taqa gcse english language (paper two) - Whitstone School, 访问时间为 五月 3, 2026， http://www.whitstoneschool.org/s/English-Language-Revision-Resource.pdf •\t30 Verbs for Kids: Fun Examples and Easy Definitions - OHLA Blog, 访问时间为 五月 3, 2026， https://www.ohla.com/blog/30-verbs-for-kids/ •\tEnglish language - GCSE subject content and assessment objectives - GOV.UK, 访问时间为 五月 3, 2026， https://assets.publishing.service.gov.uk/media/5a758f70e5274a545822c788/GCSE_English_Language_final.pdf •\taccumulate adaptation advancement allegiance alteration ambiguous amplify analyze articulate aspect assumption attain bias brave - Think SRSD, 访问时间为 五月 3, 2026， https://www.thinksrsd.com/wp-content/uploads/2018/08/grade-8-tier-ii-vocabulary-Hyde-Park.pdf •\tList of 47 Phrasal Verbs and Their One-Word Substitutions - Scribbr, 访问时间为 五月 3, 2026， https://www.scribbr.com/academic-writing/phrasal-verb-alternatives/ •\tAcademic Vocabulary: Core Tier 2 Words, List 8, 访问时间为 五月 3, 2026， https://www.vocabulary.com/lists/8034369 •\tTransition Words and Phrases | Writing and Communication Centre - University of Waterloo, 访问时间为 五月 3, 2026， https://uwaterloo.ca/writing-and-communication-centre/transition-words-and-phrases •\tUsing Transitional Words and Phrases - The Writing Center, 访问时间为 五月 3, 2026， https://writing.wisc.edu/handbook/transitions/ •\tTransitional Words - Touro University, 访问时间为 五月 3, 2026， https://www.touro.edu/departments/writing-center/tutorials/transitional-words/ •\tTransition Words & Phrases, 访问时间为 五月 3, 2026， https://www.smart-words.org/linking-words/transition-words.html •\t\"Because\" vs. \"Because of\": The Difference in Usage (Includes Common Sentences and Audio Lesson) - English with Alex, 访问时间为 五月 3, 2026， https://www.englishalex.com/post/because-vs-because-of-the-difference-in-usage-includes-common-sentences-and-audio-lesson •\tEnglish Language Paper 2: Writers' Viewpoints and Perspectives Knowledge Organiser 1 hour 45 mins, 访问时间为 五月 3, 2026， https://archbishopholgates.academy/wp-content/uploads/2022/06/Language-P2-Knowledge-Organiser.pdf •\tLanguage Assessment Objectives - HIAS English Moodle, 访问时间为 五月 3, 2026， https://english.hias.hants.gov.uk/pluginfile.php/5100/mod_resource/content/2/GCSE%20Assessment%20Objectives.pdf •\tIntroduction to claim evidence reasoning using sentence choice - YouTube, 访问时间为 五月 3, 2026， https://www.youtube.com/watch?v=qdMlX48iCg0 •\tTeaching Basic Argument Writing Components - Keys to Literacy, 访问时间为 五月 3, 2026， https://keystoliteracy.com/blog/teaching-basic-argument-writing-components/ •\tFour Basic Sentence Types and Modifying Phrases, 访问时间为 五月 3, 2026， https://www.brandeis.edu/writing-program/instructor-resources/mechanics/four-basic-sentence-types-and-modifying-phrasespdf.pdf •\t7 Classes and Types of Phrases - DAILY WRITING TIPS, 访问时间为 五月 3, 2026， https://www.dailywritingtips.com/7-classes-of-phrases/"
+  }
+]
