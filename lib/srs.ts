@@ -1,9 +1,11 @@
-import { StudyRecord } from "./types";
-
 export function calculateNextReview(
   quality: number,
-  current: Pick<StudyRecord, "repetitionCount" | "easeFactor" | "intervalDays">
-): Pick<StudyRecord, "repetitionCount" | "easeFactor" | "intervalDays"> & { nextReviewDate: string } {
+  current: {
+    repetitionCount: number;
+    easeFactor: number;
+    intervalDays: number;
+  }
+): { repetitionCount: number; easeFactor: number; intervalDays: number; nextReviewDate: string } {
   let { repetitionCount, easeFactor, intervalDays } = current;
 
   easeFactor = Math.max(1.3, easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)));

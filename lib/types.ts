@@ -14,36 +14,40 @@ export interface Sentence {
   deepAnalysis: string;
 }
 
-export interface StudyRecord {
+export interface AttemptRecord {
+  input: string;
+  accuracy: number;
+  passed: boolean;
+  timestamp: string;
+}
+
+export interface SentenceProgress {
   sentenceId: string;
-  repetitionCount: number;
-  easeFactor: number;
-  intervalDays: number;
-  nextReviewDate: string;
-  inputHistory: string[];
-  errorTags: string[];
-  learnedAt?: string;
-  dictationUnlocked: boolean;
+  attempts: AttemptRecord[];
+  totalAttempts: number;
+  bestAccuracy: number;
+  passed: boolean;
+  inReview: boolean;
 }
 
-export interface UserProgress {
-  studyRecords: Record<string, StudyRecord>;
-  lastStudiedAt?: string;
+export interface DiffResult {
+  type: "correct" | "wrong" | "missing" | "extra";
+  word: string;
+  correctWord?: string;
+  index: number;
 }
 
-export type CardState =
-  | "TRANSLATE_FIRST"
-  | "AI_REVIEW"
-  | "PERFECT_REWRITE"
-  | "REWRITE_FEEDBACK"
-  | "COMPLETED";
+export interface ScoringResult {
+  accuracy: number;
+  passed: boolean;
+  diff: DiffResult[];
+  normalizedInput: string;
+  normalizedTarget: string;
+  spellingErrors: number;
+  message: string;
+}
 
-export type DictationState =
-  | "READY"
-  | "LISTENING"
-  | "INPUT"
-  | "CHECKING"
-  | "RESULT";
+export type StudyPhase = "translating" | "passed" | "maxed_out" | "reviewing";
 
 export interface AIFeedback {
   grammarCorrection: string;
@@ -51,11 +55,4 @@ export interface AIFeedback {
   errorTags: string[];
   encouragement: string;
   overallScore: number;
-}
-
-export interface GeneratedTask {
-  id: string;
-  targetKnowledge: string;
-  generatedChinese: string;
-  targetSentenceHint: string;
 }

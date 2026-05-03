@@ -2,3 +2,6 @@
 .env
 node_modules/
 .next/
+
+# 私有需求规格文档（不公开）
+specs/
